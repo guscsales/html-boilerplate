@@ -1,0 +1,35 @@
+{
+    "name": "hebsix",
+    "version": "1.0.0",
+    "description": "Encontre a melhor solução para o seu negócio / Find the best solution for your business",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hebsix/hebsix-website"
+    },
+    "keywords": [
+        "site",
+        "criar",
+        "hebsix",
+        "sistemas",
+        "design",
+        "identidade",
+        "visual",
+        "soluções"
+    ],
+    "author": "Gustavo Sales Santos",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-clean": "^0.3.2",
+        "gulp-clean-css": "^2.0.12",
+        "gulp-htmlmin": "^2.0.0",
+        "gulp-imagemin": "^3.0.3",
+        "gulp-sass": "^2.3.2",
+        "gulp-uglify": "^2.0.0",
+        "pump": "^1.0.1"
+    }
+}

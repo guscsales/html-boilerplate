@@ -1,0 +1,44 @@
+@include keyframes (zoom){
+    from{
+        @include transform(scale(1));
+    }
+    to{
+        @include transform(scale(1.5));
+    }
+}
+
+@include keyframes(push) {
+    0% {
+        @include transform(translate(0, -1em) rotate(-45deg));
+    }
+    5% {
+        @include transform(translate(0, -1em) rotate(-50deg));
+    }
+    20% {
+        @include transform(translate(1em, -2em) rotate(47deg));
+    }
+    25% {
+        @include transform(translate(1em, -2em) rotate(45deg));
+    }
+    30% {
+        @include transform(translate(1em, -2em) rotate(40deg));
+    }
+    45% {
+        @include transform(translate(2em, -3em) rotate(137deg));
+    }
+    50% {
+        @include transform(translate(2em, -3em) rotate(135deg));
+    }
+    55% {
+        @include transform(translate(2em, -3em) rotate(130deg));
+    }
+    70% {
+        @include transform(translate(3em, -4em) rotate(217deg));
+    }
+    75% {
+        @include transform(translate(3em, -4em) rotate(220deg));
+    }
+    100% {
+        @include transform(translate(0, -1em) rotate(-225deg));
+    }
+}

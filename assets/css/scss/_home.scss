@@ -1,0 +1,155 @@
+main{
+    position: relative;
+}
+
+.container-white{
+    background:#fff;
+    margin-top: -40px;
+    height: 40px;
+    position: relative;
+    z-index: 2;   
+}
+
+.image-close-section{
+    height:150px;
+    margin-top: 30px;
+}
+
+.contacts{
+    list-style:none;
+    margin-top:30px;
+
+    li{
+        float:left;
+        font-size: 14.5px;
+        margin-left: 18px;
+        color:$purple; 
+ 
+        &:first-child{
+            margin-left:0;
+        }
+    }
+}
+
+#agency{
+    .section-title{
+        @include section-title-color($purple);
+    }
+    
+    .image-close-section{
+        @include bg-cover(url('../images/about.jpg'));
+    }
+
+    .signature{
+        display: inline-block;
+        width: 100%;
+        text-align: right;
+        padding-right: 50px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .light-gray-box{
+        background-color: #eeeeee;
+        color:#666;
+        font-family: 'Exo';
+        font-size:19px;
+        height: 195px;
+        text-align: right;
+        text-shadow: 1px 1px 1px rgba(173,173,173,0.91);
+        position: relative;
+        overflow:hidden;
+        padding-top: 43px;
+        padding-right: 10px;
+
+        &:after{
+            content:'';
+            width:100%;
+            height:40px;            
+            position: absolute;
+            left: 40px;
+            bottom:0;
+            background-color:#c1c1c1;
+        }
+
+        span{
+            text-transform: uppercase;
+            font-size: 43px;
+            line-height: 37px;
+        }
+    }
+       
+}
+
+#what-we-do{
+    .section-title{
+        @include section-title-color($green);
+    }
+    
+    .image-close-section{
+        @include bg-cover(url('../images/what-we-do.jpg'));
+    }
+}
+
+#budget{
+    .section-title{
+        @include section-title-color($gray);
+    }
+    
+    .image-close-section{
+        @include bg-cover(url('../images/budget.jpg'));
+    }
+
+    form{
+        .form-control{
+            &:focus{
+                border-color:$gray;
+            }
+        }
+
+        textarea{
+            max-width:100%;
+            height:120px;
+            max-height: 200px;
+        }
+    }
+}
+
+#contact{
+    .section-title{
+        @include section-title-color($blue);
+    }
+    
+    .image-close-section{
+        @include bg-cover(url('../images/keep-in-touch.jpg'));
+    }
+
+    .contacts{
+        list-style: none;
+        padding-left: 0;
+        margin-top: 20px;
+
+        li{
+            width:100%;
+            margin-left:0;
+            margin-bottom: 20px;
+        }
+    }
+
+    form{
+        margin-top:20px;
+
+        .form-control{
+
+            &:focus{
+                border-color: $blue; 
+            }
+        }
+
+        textarea{
+            max-width: 100%;
+            height:80px;
+            max-height: 120px;
+        }
+    }
+} 

@@ -39,8 +39,6 @@ requirejs.config({
 
 require(['jquery', 'app', 'budget', 'contact'], function ($, App, Budget, Contact) {
     App.initialize();
-    Budget.initialize();
-    Contact.initialize();
 
     $('.wrapper-loader').addClass('not-active');
 

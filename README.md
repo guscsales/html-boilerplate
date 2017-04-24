@@ -1,4 +1,4 @@
-# html-boilerplate
+# Hebsix - Boilerplate One
 
 This is the repository for initialize simple projects.
 
@@ -15,7 +15,26 @@ git clone https://github.com/hebsix/html-boilerplate
 npm install
 ``` 
 
-### Configure Xampp ###
+### Start with Nodejs ###
+
+#### First Access
+```
+npm run init
+``` 
+
+#### Others Access
+```
+npm run serve
+``` 
+
+#### Server
+
+```
+localhost:5001
+```
+
+
+### Start with Xampp ###
 
 #### Windows
 
@@ -34,4 +53,21 @@ Then open the ***"C:\xampp\apache\conf\httpd.conf"***, search by (CTRL + F) "Lis
 Listen 300??
 ```
 
-Completed the steps above you might start the Xampp and run on ***"http://localhost:300??"***.
+Completed the steps above you might start the Xampp and run on **"localhost:300??"**.
+
+### Gulp Tasks ###
+
+* To start the server and watch:
+```
+npm run serve
+``` 
+
+* To start the watch:
+```
+npm run watch
+``` 
+
+* To start the build for prod:
+```
+npm run build:prod
+``` 

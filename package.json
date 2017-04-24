@@ -6,6 +6,7 @@
   "scripts": {
     "init": "npm install gulp-cli -g && npm install && npm run start",
     "serve": "concurrently -kr 'gulp sass:watch' 'node server'",
+    "watch": "gulp sass:watch",
     "build:clean": "gulp build:prod:clean",
     "build:prod": "gulp build:prod:clean && gulp build:prod:copy && gulp build:prod:compress"
   },
